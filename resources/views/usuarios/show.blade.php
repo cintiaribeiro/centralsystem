@@ -19,13 +19,13 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col">
-                                <strong>Nome</strong> : <span>{{$user->name}}</span>
+                                <strong>Nome: </strong> <span>{{$user->name}}</span>
                             </div>
                             <div class="col">
-                                <strong>Email</strong> : <span>{{$user->email}}</span>
+                                <strong>Email:</strong> <span>{{$user->email}}</span>
                             </div>
                             <div class="col">
-                                <strong>Telefone</strong> : <span>(21) 9 9559-9087</span>
+                                <strong>Telefone:</strong> <span>(21) 9 9559-9087</span>
                             </div>
                         </div>
                         <div class="row mt-5">
@@ -33,7 +33,7 @@
                                 <thead>
                                   <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">Naticias</th>
+                                    <th scope="col">Notícias</th>
                                     <th scope="col">Publicação</th>
                                     <th scope="col"></th>
                                   </tr>
