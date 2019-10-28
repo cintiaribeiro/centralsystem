@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 @if (session('success'))
                     <div class="alert alert-success">
                         {{ session('success') }}
@@ -44,7 +44,7 @@
                                             <tr>
                                                 <th scope="row">{{$noticia->id}}</th>
                                                 <td>{{$noticia->titulo}}</td>
-                                                <td>{{$user->create_at}}</td>
+                                                <td>{{$noticia->created_at}}</td>
                                                 <td>                                                                                        
                                                     <a class="btn btn-secondary" href="{{route('user.edit', $noticia->id)}}">Visualizar</a>                                                
                                                 </td>                                   

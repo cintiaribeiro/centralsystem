@@ -12,9 +12,11 @@
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
-                    @endif
-
-                    You are logged in!
+                    @endif                    
+                    <div class="d-flex justify-content-around">
+                        <a href="{{route('user.index')}}" class="dash">Usuários</a>
+                        <a href="{{route('news.index')}}" class="dash">Notícias</a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -18,18 +18,26 @@
                         {{ session('error') }}
                     </div>
                 @endif
-                <form method="POST" action="{{route('news.store')}}">
-                    @csrf
-                    <div class="form-group">
-                        <label for="titulo">Título</label>
-                        <input type="text" class="form-control" id="titulo" name="titulo">
+                <div class="card">
+                    <div class="card-header">
+                        Cadastro de Notícia                       
+                    </div>    
+                    <div class="card-body">
+                        <form method="POST" action="{{route('news.store')}}">
+                            @csrf
+                            <div class="form-group">
+                                <label for="titulo">Título</label>
+                                <input type="text" class="form-control" id="titulo" name="titulo">
+                            </div>
+                            <div class="form-group">
+                                <label for="noticia">Notícia</label>
+                                <textarea class="form-control" id="noticia" rows="10" name="noticia" ></textarea>
+                            </div>                                      
+                            <button type="submit" class="btn btn-primary submit">Salvar</button>
+                        </form>                       
                     </div>
-                    <div class="form-group">
-                        <label for="noticia">Notícia</label>
-                        <textarea class="form-control" id="noticia" rows="10" name="noticia" ></textarea>
-                    </div>                                      
-                    <button type="submit" class="btn btn-primary">Salvar</button>
-                </form>
+                </div>
+
             </div>
         </div>
     </div>

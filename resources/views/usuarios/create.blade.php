@@ -18,18 +18,26 @@
                         {{ session('error') }}
                     </div>
                 @endif
-                <form method="POST" action="{{route('user.store')}}">
-                    @csrf
-                    <div class="form-group">
-                        <label for="nome">Nome</label>
-                        <input type="text" class="form-control" id="nome" name="name">
+
+                <div class="card">
+                    <div class="card-header">
+                        Cadastro de Usuário                       
+                    </div>    
+                    <div class="card-body">
+                        <form method="POST" action="{{route('user.store')}}">
+                            @csrf
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome" name="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>                                      
+                            <button type="submit" class="btn btn-primary submit">Salvar</button>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" class="form-control" id="email" name="email">
-                    </div>                                      
-                    <button type="submit" class="btn btn-primary">Salvar</button>
-                </form>
+                </div>                
             </div>
         </div>
     </div>

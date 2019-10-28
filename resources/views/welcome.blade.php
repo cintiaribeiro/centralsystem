@@ -61,6 +61,14 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .photo{
+                width: 700px;
+                height: auto;
+            }
+            .links a{
+                color:#8e3031;
+                font-weight: bold;
+            }
         </style>
     </head>
     <body>
@@ -80,20 +88,9 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+               
+                <img class="photo" src="{{ asset('image/logo.png') }}" alt="">
+               
             </div>
         </div>
     </body>
