@@ -11142,3 +11142,14 @@ a.text-dark:focus {
   box-shadow: 2px 2px #e8d5d5, -2px 2px #e8d5d5, 2px -2px #e8d5d5, -2px -2px #e8d5d5;
 }
 
+.voltar {
+  border: 1px solid #8e3031;
+  color: #8e3031;
+}
+
+.voltar:hover {
+  background: #af4444;
+  color: #e8d5d5;
+  text-decoration: none;
+}
+

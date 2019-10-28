@@ -15,6 +15,7 @@
                             <th scope="col">#</th>
                             <th scope="col">Nome</th>
                             <th scope="col">E-mail</th>
+                            <th scope="col">Telefone</th>
                             <th scope="col"><a class="btn btn-primary" href="{{route('user.create')}}" role="button">Novo Usuário</a></th>
                         </tr>
                     </thead>
@@ -25,6 +26,7 @@
                                     <th scope="row">{{$user->id}}</th>
                                     <td>{{$user->name}}</td>
                                     <td>{{$user->email}}</td>
+                                    <td>{{$user->phone}}</td>
                                     <td>
                                         <a class="btn btn-primary" href="{{route('user.show', $user->id)}}">Visualizar</a>                                        
                                         <a class="btn btn-secondary" href="{{route('user.edit', $user->id)}}">Editar</a>

@@ -13,7 +13,8 @@
                     <div class="card-header">
                         <div class=" row justify-content-end">
                             <a class="btn btn-secondary mr-2" href="{{route('user.edit', $user->id)}}" role="button">Editar</a>
-                            <button type="button" class="btn btn-danger deletarUsuario" id="{{$user->id}}">Deletar</button>
+                            <button type="button" class="btn btn-danger deletarUsuario mr-2" id="{{$user->id}}">Deletar</button>
+                            <a href="{{route('user.index')}}" class=" btn voltar">Voltar</a>
                         </div>
                     </div>    
                     <div class="card-body">
@@ -25,7 +26,7 @@
                                 <strong>Email:</strong> <span>{{$user->email}}</span>
                             </div>
                             <div class="col">
-                                <strong>Telefone:</strong> <span>(21) 9 9559-9087</span>
+                                <strong>Telefone:</strong> <span>{{$user->phone}}</span>
                             </div>
                         </div>
                         <div class="row mt-5">
@@ -46,7 +47,7 @@
                                                 <td>{{$noticia->titulo}}</td>
                                                 <td>{{$noticia->created_at}}</td>
                                                 <td>                                                                                        
-                                                    <a class="btn btn-secondary" href="{{route('user.edit', $noticia->id)}}">Visualizar</a>                                                
+                                                    <a class="btn btn-secondary" href="{{route('news.show', $noticia->id)}}">Visualizar</a>                                                
                                                 </td>                                   
                                             </tr>
                                         @endforeach

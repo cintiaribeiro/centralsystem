@@ -13,7 +13,8 @@
                     <div class="card-header">
                         <div class=" row justify-content-end">
                             <a class="btn btn-secondary mr-2" href="{{route('news.edit', $news->id)}}" role="button">Editar</a>
-                            <button type="button" class="btn btn-danger deletarNoticia" id="{{$news->id}}">Deletar</button>
+                            <button type="button" class="btn btn-danger deletarNoticia  mr-2" id="{{$news->id}}">Deletar</button>
+                            <a href="{{route('news.index')}}" class="btn voltar">Voltar</a>
                         </div>
                     </div>    
                     <div class="card-body">

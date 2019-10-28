@@ -85,7 +85,7 @@ class UserController extends Controller
     public function update(Request $request, User $user)
     {
         $dados = $request->all();
-
+        
         $update = $user->update($dados);
 
         if (!$update)

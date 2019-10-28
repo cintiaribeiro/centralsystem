@@ -20,8 +20,11 @@
                 @endif
 
                 <div class="card">
-                    <div class="card-header">
-                        Cadastro de Usuário                       
+                    <div class="card-header d-flex justify-content-between">
+                        <div>
+                            Cadastro de Usuário                       
+                        </div>
+                        <a href="{{route('user.index')}}" class="btn voltar">Voltar</a>
                     </div>    
                     <div class="card-body">
                         <form method="POST" action="{{route('user.store')}}">
@@ -33,6 +36,10 @@
                             <div class="form-group">
                                 <label for="email">E-mail</label>
                                 <input type="email" class="form-control" id="email" name="email">
+                            </div>                                      
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="text" class="form-control" id="phone" name="phone">
                             </div>                                      
                             <button type="submit" class="btn btn-primary submit">Salvar</button>
                         </form>

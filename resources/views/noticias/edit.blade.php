@@ -19,8 +19,11 @@
                     </div>
                 @endif
                 <div class="card">
-                    <div class="card-header">
-                        Edição de Usuário                       
+                    <div class="card-header d-flex justify-content-between">
+                        <div>
+                            Edição de Usuário
+                        </div>
+                        <a href="{{route('news.index')}}" class="btn voltar">Voltar</a>
                     </div>    
                     <div class="card-body">
                         <form method="POST" action="{{route('news.update', $news->id)}}">
