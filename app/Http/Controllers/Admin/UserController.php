@@ -60,10 +60,7 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(User $user)
-    {
-        $user = User::where('id', $user->id)->with('noticias')->first();
-         
-        
+    {        
         return view('usuarios.show', compact('user'));
     }
 

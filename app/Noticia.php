@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Noticia extends Model
 {
-    protected $filable = ['titulo', 'noticia'];
+    protected $fillable = ['titulo', 'noticia'];
 
     /**
      * Criando relacionamento com o modelo user
@@ -15,6 +15,6 @@ class Noticia extends Model
      */
     public function users()
     {
-        $this->belongsTo('App\User');
+        return $this->belongsTo('App\User', 'user_id');
     }
 }

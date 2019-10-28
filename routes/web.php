@@ -17,12 +17,16 @@ Route::get('/', function () {
 
 Route::prefix('admin')->group(function(){
     Auth::routes(['register' => false]);
+    
     Route::group([
         'namespace' => 'Admin',
         'middleware' => 'auth',
     ], function () {
         Route::resource('user', 'UserController');
+        Route::resource('news', 'NoticiaController');
     });
+
 });
+
 
 Route::get('/home', 'HomeController@index')->name('home');

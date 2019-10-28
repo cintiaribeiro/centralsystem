@@ -9,4 +9,15 @@ $(document).ready(function(){
         }
         
     });
+
+    $('.deletarNoticia').click(function(){
+        if (confirm('Deseja excluir a notícia selecionada?')){
+            var id = $(this).attr('id');
+            $('#formExcuir').attr('action','/admin/news/'+id);
+            $('#formExcuir').submit();
+        } else {
+            return false;
+        }
+        
+    });
 })
