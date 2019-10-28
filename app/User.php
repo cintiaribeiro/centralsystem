@@ -36,4 +36,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Criando relacionamento com o modelo Noticia.
+     *
+     * @return void
+     */
+    public function noticias()
+    {
+        return $this->hasMany('App\Noticia');
+    }
 }
